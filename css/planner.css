@@ -1,0 +1,184 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100% - 173px);
+}
+
+.monthControlBtn {
+    background-image: url("../resources/images/direction.png");
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+.addPlanTimeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addPlanTimeText {
+    border: 0;
+    width: 25px;
+}
+
+.addPlanTimeControlBtn {
+    background-image: url("../resources/images/direction.png");
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+}
+
+.addPlanTimeMinusBtn {
+    transform: rotate(180deg)
+}
+
+.planBox {
+    padding: 10px 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.planDayText {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.planInfoBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.planTimeText {
+    margin-right: 5px;
+}
+
+.pastPlanText {
+    text-decoration: line-through;
+}
+
+.planContentInput {
+    flex-grow: 1;
+    margin-right: 60px;
+}
+
+.planBtnContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.planMenuBtn {
+    background-image: url("../resources/images/planMenu.png");
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+}
+
+.planSetBtnBox {
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.planSetBtn {
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+}
+
+#plannerOwnerText {
+    font-weight: bold;
+    margin: 20px;
+}
+
+#plannerDateContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#plannerDateText {
+    border: 0;
+    width: 70px;
+}
+
+#monthMinusBtn {
+    transform: rotate(90deg)
+}
+
+#monthPlusBtn {
+    transform: rotate(-90deg)
+}
+
+#addPlanContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    border: 1px solid #d3d3d3;
+    margin: 0;
+}
+
+#addPlanDateText {
+    border: 0;
+}
+
+#addPlanTimeContainer {
+    display: flex;
+    align-items: center;
+}
+
+#addPlanContentText {
+    width: 60%;
+}
+
+#addPlandAddBtn {
+    background-image: url("../resources/images/plus.png");
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+#planContainer {
+    width: 60%;
+    height: calc(100% - 56px);
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    overflow-y: auto;
+}
+
+@media all and (max-width:767px) {
+    #addPlanContainer {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    #addPlanContentText {
+        width: 80%;
+    }
+
+    #planContainer {
+        width: 100%;
+        height: calc(100% - 96px);
+    }
+}

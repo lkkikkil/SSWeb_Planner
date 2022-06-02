@@ -1,0 +1,65 @@
+.navBtn {
+    height: 24px;
+    margin: 15px;
+}
+
+.teamContainer {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.teamNameBox {
+    display: flex;
+    justify-content: center;
+    background-color: #f72f62;
+}
+
+.teamNameText {
+    color: #ffffff;
+    padding: 5px;
+}
+
+.userBox {
+    margin: 8px 30px 8px 10px;
+}
+
+.userBtn {
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+}
+
+#headNav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#titleText {
+    font-size: 32px;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+}
+
+#asideNav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    border: 0;
+    border-right: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    height: 100vh;
+    transition: left 0.5s;
+}
+
+#asideNavHeader {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#asideNavMain {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: calc(100% - 55px);
+}
